@@ -1,5 +1,6 @@
 import React from "react";
 import Wrapper from "./components/Wrapper";
+import List from "./components/List";
 import API from "./utils/API";
 
 class App extends React.Component {
@@ -22,8 +23,7 @@ class App extends React.Component {
 
     return(
       <Wrapper>
-
-        <h3>Nothing yet, but please check again soon!</h3>;
+        <List employees={this.state.employees} />
       </Wrapper>
     );
   };
